@@ -30,14 +30,22 @@ const Portfolio = () => {
       {fullscreenVideo && (
         <div 
           className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
-          onClick={() => setFullscreenVideo(null)}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setFullscreenVideo(null);
+            }
+          }}
         >
-          <div className="w-full max-w-6xl aspect-video">
+          <div 
+            className="w-full max-w-6xl aspect-video"
+            onClick={(e) => e.stopPropagation()} 
+          >
             <video 
               className="w-full h-full"
               autoPlay 
               controls 
               src={fullscreenVideo}
+              onClick={(e) => e.stopPropagation()} 
             >
               <source src={fullscreenVideo} type="video/quicktime" />
               Din nettleser støtter ikke video-elementet.
