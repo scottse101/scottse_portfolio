@@ -1,6 +1,6 @@
 export const personInfo = {
     navn: "Scott Sanya Emonanekkul",
-    tittel: "Computer Science Student @ NTNU",
+    tittel: "Computer Engineering Student @ NTNU",
     omMeg: "Jeg er lidenskapelig opptatt av å lage brukersentrerte løsninger og lærer stadig nye teknologier!",
     utdanning: [
       {
