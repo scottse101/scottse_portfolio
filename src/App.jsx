@@ -5,6 +5,7 @@ import EducationSection from './components/EducationSection';
 import ProjectsSection from './components/ProjectsSection';
 import CertificationsSection from './components/CertificationsSection';
 import ContactSection from './components/ContactSection';
+import { Analytics } from "@vercel/analytics/react"
 
 const Portfolio = () => {
   const [fullscreenVideo, setFullscreenVideo] = useState(null);
@@ -53,6 +54,7 @@ const Portfolio = () => {
           </div>
         </div>
       )}
+    <Analytics /> 
     </div>
   );
 };
